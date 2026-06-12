@@ -133,3 +133,46 @@ h1,h2,h3{
 
 section{
     margin-top:60
+    /* CONTACT FORM FIX */
+
+form div{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+form label{
+    display:block;
+    font-size:1rem;
+    font-weight:500;
+    margin-bottom:8px;
+    color:#f8fafc;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.08);
+    color:white;
+    font-size:1rem;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+form textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+form input:focus,
+form textarea:focus{
+    outline:none;
+    border-color:#38bdf8;
+    box-shadow:0 0 15px rgba(56,189,248,.4);
+}
+
+form button{
+    margin-top:10px;
+}
